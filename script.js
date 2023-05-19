@@ -6,12 +6,12 @@ function createInputFields() {
   for (var i = 1; i <= totalPlayers; i++) {
     var inputField = document.createElement("div");
     inputField.innerHTML =
-      '<label for="player' +
+      '<label class="mt-3" for="player' +
       i +
       '">Player ' +
       i +
       ":</label>" +
-      '<input type="text" id="player' +
+      '<input class="rounded" type="text" id="player' +
       i +
       '">';
     inputFieldsContainer.appendChild(inputField);
